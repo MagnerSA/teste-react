@@ -1,0 +1,33 @@
+.barra {
+  background-color: rgb(53, 60, 77);
+  float: left;
+  width: 20vw;
+  height: 100vh;
+  flex-direction: column;
+  display: block;
+
+}
+
+.botaoDiv {
+  float: center;
+  display: flex;
+  height: 60px;
+  flex-direction: center;
+  justify-content: center;
+}
+
+.botao1 {
+  background-color: transparent;
+  color: white;
+
+  flex-direction: center;
+  border: none;
+}
+
+.botao2{
+  background-color: transparent;
+  color: white;
+
+  border: none;
+}
+
