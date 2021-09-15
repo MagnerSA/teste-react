@@ -1,8 +1,104 @@
 .card {
-  background-color: rgb(190, 207, 221);
+  background-color: rgb(146, 169, 189);
 
   height: 80px;
   border-bottom: 2px solid rgb(255, 255, 255);
+  /* align-content: ; */
+  
 }
 
+.card .name {
 
+  float: left;
+  height: 78px;
+  width: 12vw;
+  color:rgb(255, 255, 255);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border-right: 1px solid rgb(137, 159, 179);
+}
+
+.card .purchaseDay {
+  color:rgb(255, 255, 255);
+
+  float: left;
+  height: 78px;
+  width: 12vw;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-right: 1px solid rgb(137, 159, 179);
+
+
+}
+
+.card .portion {
+  color:rgb(255, 255, 255);
+
+  float: left;
+  height: 78px;
+  width: 12vw;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-right: 1px solid rgb(137, 159, 179);
+
+
+}
+
+.card .price {
+  color:rgb(255, 255, 255);
+  float: left;
+  height: 78px;
+  width: 12vw;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-right: 1px solid rgb(137, 159, 179);
+
+
+}
+
+.card .weight {
+  color:rgb(255, 255, 255);
+
+  float: left;
+  height: 78px;
+  width: 12vw;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-right: 1px solid rgb(137, 159, 179);
+
+
+}
+
+.card .delete {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  border: none;
+
+
+  float: right;
+  height: 78px;
+  width: 12vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border-left: 1px solid rgb(137, 159, 179);
+
+  
+}

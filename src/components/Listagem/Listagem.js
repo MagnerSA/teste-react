@@ -1,36 +1,46 @@
-//   return (
-//     <div>
-//       <ul>
-//         {Array.from(refeicoes.values()).map(
-//           (r) => {
-
-//             return (
-//               <li key={r.id} > {r.name} </li>
-//             )
-//           })
-//         }
-//       </ul>
-//     </div>
-
 import React from 'react';
 import CardRefeicao from '../CardRefeicao/CardRefeicao';
 import './styles.css';
 
 
-export default function Listagem({ refeicoes }) {
+export default function Listagem({ refeicoes, deletar }) {
   return (
-    <div className="listagem">
-      <ul>
-        {Array.from(refeicoes.values()).map(
-          (r) => {
+    <>
+      <div className="legenda">
+        <div className="name">
+          NOME
+        </div>
 
-            return (
-              // <li key={r.id} > {r.name} </li>
-              <CardRefeicao refeicao={r}></CardRefeicao>
-            )
-          })
-        }
-      </ul>
-    </div>
+        <div className="purchaseDay">
+          COMPRADO EM
+        </div>
+
+        <div className="portion">
+          PORÇÃO
+        </div>
+
+        <div className="price">
+          PREÇO
+        </div>
+        <div className="weight">
+          PESO
+        </div>
+
+
+      </div>
+      <div className="listagem">
+        <ul>
+          {Array.from(refeicoes.values()).map(
+            (r) => {
+
+              return (
+                // <li key={r.id} > {r.name} </li>
+                <CardRefeicao key={r.id} refeicao={r} deletar={() => { deletar(r.id); console.log("UE"); }}></CardRefeicao>
+              )
+            })
+          }
+        </ul>
+      </div>
+    </>
   );
 }

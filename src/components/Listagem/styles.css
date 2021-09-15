@@ -1,12 +1,40 @@
 .listagem {
+  height: 75vh;
   width: 75vw;
-  height: 85vh;
+
+  position: fixed;
+  left: 22.5vw;
+  top: 20vh;
+
+  overflow: hidden;
+  overflow-y: scroll;
+
+}
+
+.legenda {
+  background-color: rgb(102, 119, 133);
+
+  width: 75vw;
+  height: 5vh;
 
   position: fixed;
   left: 22.5vw;
   top: 12.5vh;
- 
-  overflow: hidden;
-  overflow-y: scroll;
 
+}
+
+.legenda div {
+  color:rgb(255, 255, 255);
+
+  font-size: 12px;
+
+  float: left;
+  height: 5vh;
+  width: 12vw;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-right: 1px solid rgb(142, 154, 165);
 }

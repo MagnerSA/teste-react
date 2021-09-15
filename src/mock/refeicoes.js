@@ -3,7 +3,7 @@ export const listaDeRefeicoes = new Map(
     ['1', {
       id: 1,
       name: "Cereal",
-      purchaseDay: Date(2021, 9, 11),
+      purchaseDay: "2021-09-11",
       portion: 125,
       fraction: "2/3",
       approximatePrice: 3,
@@ -12,7 +12,7 @@ export const listaDeRefeicoes = new Map(
       id: 2,
 
       name: "Cereal",
-      purchaseDay: Date(2021, 9, 11),
+      purchaseDay: "2021-09-11",
       portion: 125,
       fraction: "3/3",
       approximatePrice: 3,
@@ -21,7 +21,7 @@ export const listaDeRefeicoes = new Map(
       id: 3,
 
       name: "Banana",
-      purchaseDay: Date(2021, 9, 8),
+      purchaseDay: "2021-09-08",
       portion: 1,
       fraction: "11/12",
       approximatePrice: 0.25,
@@ -30,7 +30,7 @@ export const listaDeRefeicoes = new Map(
       id: 4,
 
       name: "Banana",
-      purchaseDay: Date(2021, 9, 8),
+      purchaseDay: "2021-09-08",
       portion: 1,
       fraction: "12/12",
       approximatePrice: 0.25,
@@ -39,7 +39,7 @@ export const listaDeRefeicoes = new Map(
       id: 5,
 
       name: "Leite",
-      purchaseDay: Date(2021, 9, 8),
+      purchaseDay: "2021-09-08",
       portion: 250,
       fraction: "4/4",
       approximatePrice: 1.25,
@@ -48,7 +48,7 @@ export const listaDeRefeicoes = new Map(
       id: 6,
 
       name: "Aveia",
-      purchaseDay: Date(2021, 9, 9),
+      purchaseDay: "2021-09-09",
       portion: 33,
       fraction: "5/5",
       approximatePrice: 1.6,

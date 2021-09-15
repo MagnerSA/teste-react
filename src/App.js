@@ -56,7 +56,14 @@ function App() {
     mudarParaExibicaoDeRefeicoes();
   }
 
-  console.log(refeicoes.size);
+  function deleteRefeicao(id) {
+
+    var newMap = new Map([...refeicoes]);
+
+    newMap.delete(id.toString());
+
+    alterarRefeicoes(newMap);
+  }
 
   return (
     <>
@@ -64,9 +71,10 @@ function App() {
 
       <Header className="header" name={telaExibida} />
 
-      <ConteudoPrincipal className="content" conteudoExibido={telaExibida} refeicoes={refeicoes} adicionarRefeicao={addRefeicao} />
+      <ConteudoPrincipal className="content" conteudoExibido={telaExibida} refeicoes={refeicoes} adicionarRefeicao={addRefeicao} deleteRefeicao={deleteRefeicao} />
     </>
   );
+
 }
 
 export default App;
