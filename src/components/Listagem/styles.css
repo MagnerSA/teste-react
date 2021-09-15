@@ -1,3 +1,12 @@
-.content {
-  
+.listagem {
+  width: 75vw;
+  height: 85vh;
+
+  position: fixed;
+  left: 22.5vw;
+  top: 12.5vh;
+ 
+  overflow: hidden;
+  overflow-y: scroll;
+
 }

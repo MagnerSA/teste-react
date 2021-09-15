@@ -1,0 +1,53 @@
+.itemFormulario {
+  /* width: 80vw; */
+  height: 12.5vh;
+  justify-content: center;
+  text-align: center;
+  /* background-color: rgb(205, 209, 212); */
+  /* position: fixed; */
+  /* left: 20vw; */
+  /* justify-content: center; */
+  /* float: center; */
+  /* display: flex; */
+  
+}
+
+.titulo {
+  /* background-color: rgb(108, 108, 150); */
+  height: 25px;
+  position: relative;
+  
+  
+  /* position: fixed;
+  left: 57.5vw; */
+  /* float: center; */
+  /* display: flex; */
+  /* position: relative; */
+  /* justify-self: center; */
+  /* background-color: coral; */
+  /* width: 25vw; */
+  /* flex-direction: center; */
+
+}
+
+.campo {
+  flex-direction: center;
+  background-color: rgb(243, 243, 243);
+  border: none;
+  height: 35px;
+  width: 30vw;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+
+
+
+

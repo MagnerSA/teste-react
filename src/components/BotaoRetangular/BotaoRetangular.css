@@ -1,0 +1,36 @@
+.formulario .botaoDiv {
+  background-color: rgb(146, 157, 184);
+  width: 30vw;
+  float: center;
+  display: flex;
+  height: 50px;
+  flex-direction: center;
+  justify-content: center;
+  position: fixed;
+  left: 45vw;
+  top: 80vh;
+}
+
+.formulario .botaoAtivo {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+
+  flex-direction: center;
+  border: none;
+  height: 50px;
+  width: 30vw;
+
+}
+
+.formulario .botao {
+  background-color: transparent;
+  color: rgb(102, 119, 133);
+
+  flex-direction: center;
+  border: none;
+  height: 50px;
+  width: 30vw;
+}
+
+
+

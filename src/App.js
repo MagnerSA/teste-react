@@ -60,9 +60,10 @@ function App() {
 
   return (
     <>
+      <Menu className="menu" mudarParaExibicaoDeRefeicoes={mudarParaExibicaoDeRefeicoes} mudarParaExibicaoDeCriacao={mudarParaExibicaoDeCriacao} telaExibida={telaExibida} />
 
-      <Menu className="menu" mudarParaExibicaoDeRefeicoes={mudarParaExibicaoDeRefeicoes} mudarParaExibicaoDeCriacao={mudarParaExibicaoDeCriacao} />
       <Header className="header" name={telaExibida} />
+
       <ConteudoPrincipal className="content" conteudoExibido={telaExibida} refeicoes={refeicoes} adicionarRefeicao={addRefeicao} />
     </>
   );

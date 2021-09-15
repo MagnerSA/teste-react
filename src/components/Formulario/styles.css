@@ -1,0 +1,14 @@
+.formulario{
+  position: fixed;
+  top: 15vh;
+  height: 62
+  .5vh;
+  left: 35vw;
+  width: 50vw;
+  
+
+  /* align-content: center; */
+  justify-content: center;
+  flex-direction: column;
+  display: block;
+}

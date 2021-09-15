@@ -1,17 +1,14 @@
 import React from 'react';
+import BotaoLateral from '../BotaoLateral/BotaoLateral';
 import './styles.css';
 
-export default function Menu({ mudarParaExibicaoDeRefeicoes, mudarParaExibicaoDeCriacao }) {
+export default function Menu({ mudarParaExibicaoDeRefeicoes, mudarParaExibicaoDeCriacao, telaExibida }) {
   return (
     <div className="barra">
 
-      <div className="botaoDiv">
-        <button className="botao1" type="button" onClick={mudarParaExibicaoDeRefeicoes}>REFEIÇÕES</button>
-      </div>
+      <BotaoLateral onClick={mudarParaExibicaoDeRefeicoes} texto={"REFEIÇÕES"} botaoAtivo={telaExibida == "refeicoes"}></BotaoLateral>
 
-      <div className="botaoDiv">
-        <button className="botao2" type="button" onClick={mudarParaExibicaoDeCriacao}>ADICIONAR NOVA</button>
-      </div>
+      <BotaoLateral onClick={mudarParaExibicaoDeCriacao} texto={"ADICIONAR NOVA"} botaoAtivo={telaExibida == "criacao"}></BotaoLateral>
 
     </div>
   );

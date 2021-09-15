@@ -1,22 +1,19 @@
 import React from 'react';
+import BotaoRetangular from '../BotaoRetangular/BotaoRetangular';
+import ItemFormulario from '../ItemFormulario/ItemFormulario';
+import './styles.css';
 
 export default function Formulario({ adicionarRefeicao }) {
   return (
-    <div>
+    <div className="formulario">
       <>
-        Nome: <input type="text" id="name" />
-        <br />
-        Data da Compra: <input type="date" id="purchaseDay" />
-        <br />
-        Peso total: <input type="number" id="weight" />
-        <br />
-        Preço total: <input type="number" id="price" />
-        <br />
-        Número de porções: <input type="number" id="portions" />
-        <br />
-        <br />
-        <button type="button" onClick={adicionarRefeicao}>ADICIONAR</button>
+        <ItemFormulario type="text" id="name" title={"NOME"}></ItemFormulario>
+        <ItemFormulario type="date" id="purchaseDay" title={"DATA DE COMPRA"}></ItemFormulario>
+        <ItemFormulario type="number" id="weight" title={"PESO TOTAL (EM GRAMAS)"}></ItemFormulario>
+        <ItemFormulario type="number" id="price" title={"PREÇO TOTAL (EM REAIS)"}></ItemFormulario>
+        <ItemFormulario type="number" id="portions" title={"PORÇÕES"}></ItemFormulario>
 
+        <BotaoRetangular onClick={adicionarRefeicao} texto={"ADICIONAR"} botaoAtivo={true} ></BotaoRetangular>
       </>
     </div>
 
